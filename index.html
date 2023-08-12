@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deslizador de Imágenes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="img-bkg sizeCon ">
+
+    <div class="carousel-container">
+
+      <h1>Pokedex</h1>
+      <ul class="carousel" id="carousel">
+        <!-- Add this input element for the search box -->
+       <li id="dummy" class="dummy"></li> 
+
+      </ul>
+      <input class="Ajuste" type="text" id="searchInput" placeholder="Search Pokémon by name or number">
+    </div>
+    <div class="aj">
+      <button id="btn-prev">Anterior</button>
+      <button id="btn-next">Siguiente</button>
+
+    </div>
+    <!-- modal -->
+    <div id="pokemonModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h5 id="modalNumber"></h5>
+        <h5 id="modalName"></h5>
+        <img id="modalImage" src="" alt="">
+        <p id="modalType"></p>
+        <p id="modalAbilities"></p>
+        <p id="modalHeight"></p>
+        <p id="modalWeight"></p>
+        <p id="modalWeakness"></p>
+        <!-- Add other details you want to display in the modal -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
