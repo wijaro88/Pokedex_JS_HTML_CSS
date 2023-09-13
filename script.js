@@ -77,7 +77,7 @@ function showPokemonDetails(index) {
 
   function handleSearch() {
     const searchInput = document.getElementById("searchInput").value.trim().toLowerCase();
-
+    console.log(searchInput);
 
     if (searchInput===""){
       showPokemonDetails(currentItem);
